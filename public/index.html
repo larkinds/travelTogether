@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width initial-scale=1.0'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <title>Boilermaker</title>
     <link rel="stylesheet" href="/style.css" />
     <script defer src="/bundle.js"></script>
@@ -10,5 +10,17 @@
   <body>
     <div id="app"></div>
   </body>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: 'AIzaSyDqyWE82aH9flQgdzTJHfpPZQgsZGKWc-A',
+      authDomain: 'traveltogethere-ba294.firebaseapp.com',
+      databaseURL: 'https://traveltogethere-ba294.firebaseio.com',
+      projectId: 'traveltogethere-ba294',
+      storageBucket: 'traveltogethere-ba294.appspot.com',
+      messagingSenderId: '12630666146'
+    }
+    firebase.initializeApp(config)
+  </script>
 </html>
-

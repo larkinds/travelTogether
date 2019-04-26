@@ -6,3 +6,13 @@
 export {default as Navbar} from './navbar'
 export {default as UserHome} from './user-home'
 export {Login, Signup} from './auth-form'
+
+//forms
+export {activitiesForm} from './rdForms/activitiesForm'
+export {foodForm} from './rdForms/foodForm'
+export {lodgingForm} from './rdForms/lodgingForm'
+export {miscForm} from './rdForms/miscForm'
+export {transpoForm} from './rdForms/transpoForm'
+
+//project Home Page
+export {projectHome} from './mainComp/projectHome'

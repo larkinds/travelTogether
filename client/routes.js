@@ -5,6 +5,15 @@ import PropTypes from 'prop-types'
 import {Login, Signup, UserHome} from './components'
 import {me} from './store'
 
+import {
+  activitiesForm,
+  foodForm,
+  lodgingForm,
+  miscForm,
+  transpoForm,
+  projectHome
+} from './components/index'
+
 /**
  * COMPONENT
  */
@@ -21,6 +30,14 @@ class Routes extends Component {
         {/* Routes placed here are available to all visitors */}
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
+        {/* Forms */}
+        <Route path="/activitiesForm" component={activitiesForm} />
+        <Route path="/foodForm" component={foodForm} />
+        <Route path="/lodgingForm" component={lodgingForm} />
+        <Route path="/miscForm" component={miscForm} />
+        <Route path="/transpoForm" component={transpoForm} />
+        <Route path="/projectHome" component={projectHome} />
+
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}
