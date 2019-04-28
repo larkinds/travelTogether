@@ -1,14 +1,42 @@
 body {
-  font-family: sans-serif; }
-  body a {
-    text-decoration: none; }
-  body label {
-    display: block; }
-  body nav a {
-    display: inline-block;
-    margin: 1em; }
-  body form div {
-    margin: 1em;
-    display: inline-block; }
+  font-family: sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+body label {
+  display: block;
+}
+body nav a {
+  display: inline-block;
+  margin: 1em;
+}
+body form div {
+  margin: 1em;
+  display: inline-block;
+}
+
+html {
+  background: #b3cdd6;
+}
+
+#projectFlowBox {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#projectSectionBox {
+  background: #79b4a9;
+  padding: 5px;
+  width: 20vw;
+  height: auto;
+  margin-top: 10px;
+
+  line-height: 150px;
+  color: black;
+  font-weight: italic;
+  font-size: 2em;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map*/

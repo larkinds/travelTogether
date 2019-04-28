@@ -1,7 +1,8 @@
 import React from 'react'
 import {FormButton} from '../reusable/formButton'
+// import * as admin from 'firebase-admin'
 
-console.log(firebase.app().name)
+// var database = firebase.database()
 
 export class foodForm extends React.Component {
   constructor(props) {

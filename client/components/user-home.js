@@ -1,18 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import {projectHome} from './mainComp/chunk'
+import {ProjectHome} from './mainComp/projectHome'
 
 /**
  * COMPONENT
  */
-export const UserHome = props => {
+const UserHome = props => {
   const {email} = props
 
   return (
     <div>
       <h3>Welcome, {email}</h3>
-      <projectHome />
+      <ProjectHome />
     </div>
   )
 }

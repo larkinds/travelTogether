@@ -10,9 +10,13 @@ import {
   foodForm,
   lodgingForm,
   miscForm,
-  transpoForm,
-  projectHome
+  transpoForm
 } from './components/index'
+
+import {ProjectHome} from './components/mainComp/projectHome'
+import {chunkHome} from './components/mainComp/chunkHome'
+import {researchHome} from './components/mainComp/researchHome'
+import {executeHome} from './components/mainComp/executeHome'
 
 /**
  * COMPONENT
@@ -36,7 +40,10 @@ class Routes extends Component {
         <Route path="/lodgingForm" component={lodgingForm} />
         <Route path="/miscForm" component={miscForm} />
         <Route path="/transpoForm" component={transpoForm} />
-        <Route path="/projectHome" component={projectHome} />
+        <Route path="/projectHome" component={ProjectHome} />
+        <Route path="/chunk" component={chunkHome} />
+        <Route path="/research" component={researchHome} />
+        <Route path="/execute" component={executeHome} />
 
         {isLoggedIn && (
           <Switch>

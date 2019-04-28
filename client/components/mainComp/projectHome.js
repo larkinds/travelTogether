@@ -4,7 +4,7 @@ import {ResearchButton} from '../reusable/researchButton'
 import {ExecuteButton} from '../reusable/executeButton'
 import {ItineraryButton} from '../reusable/itineraryButton'
 
-export class projectHome extends React.Component {
+export class ProjectHome extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -15,20 +15,21 @@ export class projectHome extends React.Component {
   render() {
     return (
       <div id="projectHome">
-        <div>
-          <h1>Step 1: </h1>
-          <ChunkButton />
+        <div id="projectFlowBox">
+          <div id="projectSectionBox">
+            <ChunkButton />
+          </div>
+          <div>&#8594;</div>
+          <div id="projectSectionBox">
+            <ResearchButton />
+          </div>
+          <div>&#8594;</div>
+          <div id="projectSectionBox">
+            <ExecuteButton />
+          </div>
         </div>
+
         <div>
-          <h1>Step 2: </h1>
-          <ResearchButton />
-        </div>
-        <div>
-          <h1>Step 3: </h1>
-          <ExecuteButton />
-        </div>
-        <div>
-          <div>Itinerary:</div>
           <ItineraryButton />
         </div>
       </div>

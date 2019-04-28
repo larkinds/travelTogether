@@ -15,4 +15,7 @@ export {miscForm} from './rdForms/miscForm'
 export {transpoForm} from './rdForms/transpoForm'
 
 //project Home Page
-export {projectHome} from './mainComp/projectHome'
+export {ProjectHome} from './mainComp/projectHome'
+
+//chunk
+export {chunkHome} from './mainComp/chunkHome'

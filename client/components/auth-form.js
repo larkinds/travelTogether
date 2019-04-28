@@ -9,26 +9,41 @@ import {auth} from '../store'
 const AuthForm = props => {
   const {name, displayName, handleSubmit, error} = props
 
+  //       onClick() {
+  //       const loginSignUpForm = document.querySelector('#loginOrSignUp-form')
+  //       const email = loginSignUpForm['email'].value
+  //       const password = loginSignUpForm['password'].value
+
+  //       firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+  //         // Handle Errors here.
+  //         var errorCode = error.code;
+  //         var errorMessage = error.message;
+  //         // ...
+  //       });
+  //   }
+
   return (
-    <div>
-      <form onSubmit={handleSubmit} name={name}>
-        <div>
-          <label htmlFor="email">
-            <small>Email</small>
-          </label>
-          <input name="email" type="text" />
-        </div>
-        <div>
-          <label htmlFor="password">
-            <small>Password</small>
-          </label>
-          <input name="password" type="password" />
-        </div>
-        <div>
-          <button type="submit">{displayName}</button>
-        </div>
-        {error && error.response && <div> {error.response.data} </div>}
-      </form>
+    <div id="modal-loginOrSignUp">
+      <div className="modal-loginOrSignUp">
+        <form onSubmit={handleSubmit} name={name} id="loginOrSignUp-form">
+          <div className="input-field">
+            <label htmlFor="email">
+              <small>Email</small>
+            </label>
+            <input name="email" type="text" id="email" />
+          </div>
+          <div className="input-field" id="password">
+            <label htmlFor="password">
+              <small>Password</small>
+            </label>
+            <input name="password" type="password" />
+          </div>
+          <div className="input-field">
+            <button type="submit">{displayName}</button>
+          </div>
+          {error && error.response && <div> {error.response.data} </div>}
+        </form>
+      </div>
       <a href="/auth/google">{displayName} with Google</a>
     </div>
   )
